@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Interplanetary Transport System</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link type="text/css" href="styles/layout.css" rel="stylesheet" />	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+	</head>
+	<body>
+
+		<header class="grid-item header">
+			<img src="img/logo.png" alt="logo spacex" /> 
+			</br>
+			<h1> Interplanetary Transport System </h1>
+		</header>
+		   
+		<main class="grid-item main">
+		   		<h2> Afstand afgelegd over tijd </h2>	
+			<div id="grafiek3">
+				<canvas id="myChart3"></canvas>
+			</div>
+		</main>
+
+		<aside class="grid-item ad1">
+		    <h2> Weer op Mars </h2>
+		    <div id="grafiek1">
+		    	<canvas id="myChart"></canvas>
+		    </div>
+		</aside>
+
+		<aside class="grid-item ad2">
+			<h2> Voorraden </h2>
+		    <div id="grafiek2">
+		    	<p> Hoeveel maaltijden er nog gemaakt kunnen worden met het desbetreffende voedsel. </p>
+		   		<canvas id="myChart2"></canvas>
+		    </div>
+		   
+		    <div id="grafiek4">
+		    	<p> Hoeveel procent er nog van de water- en voedselvooraad aanwezig is. </p>
+				<canvas id="myChart4"></canvas>
+			</div>
+		</aside>
+
+		<script type="text/javascript" src="script/grafiek.js"></script>
+		<script type="text/javascript" src="script/donut.js"></script>
+		<script type="text/javascript" src="script/bar.js"></script>
+		<script type="text/javascript" src="script/water.js"></script>
+	</body>
+</html>

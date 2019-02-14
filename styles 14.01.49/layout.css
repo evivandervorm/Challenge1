@@ -1,0 +1,271 @@
+html {
+  box-sizing: border-box;
+}
+
+*, 
+*:before,
+*:after{
+  box-sizing: inherit;
+}
+
+/* mobile first */
+body{
+  background-image: linear-gradient(-90deg, #384697, #6a3a8e, #292355);
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #FFFFFF;
+  font-family: avenir, sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+        "title title"
+        "main  main"
+        "ad1   ad1"
+        "ad2   ad2"; 
+}
+
+.header, .main, .ad1, .ad2, .ad3, .ad4, .foot{
+  padding: 0.2em 1em;
+} 
+
+.header{
+  grid-area: title;
+  text-align: center;
+  margin: 0 auto;
+} 
+
+.main{
+  grid-area: main;
+  background-color: white;
+  opacity: 0.9;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.ad1 {
+  grid-area: ad1;
+  background-color: #FFF;
+  border-right: 1px solid white;
+  opacity: 0.9;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.ad2 {
+  grid-area: ad2;
+  background-color: white;
+  opacity: 0.9;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+h1{
+  font-family: Arial, sans-serif;
+  font-size: 1.0em;
+}
+
+h2{
+  color: grey;
+  font-size: 1.0em;
+}
+
+p{
+  color: grey;
+  font-size: 0.8em;
+}
+
+img {
+  width: 120px;
+  float: left;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+#grafiek1 {
+  max-width: 400px;
+}
+
+#grafiek2 {
+  max-width: 400px;
+}
+
+#grafiek3{
+  max-width: 400px;
+  margin: auto 0;
+  clear: left;
+}
+
+#grafiek4{
+  max-width: 400px;
+}
+
+/* Ipad formaat */
+@media only screen and (min-width: 640px){
+  body{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 1px;
+    grid-template-areas: 
+          "title title"
+          "main  main"
+          "ad2 ad2"
+          "ad1 ad1"; 
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  h2 {
+    font-size: 1.1em;
+  }
+
+  img{
+    width: 160px;
+  }
+
+  #grafiek1 {
+  max-width: 600px;
+  }
+
+  #grafiek2 {
+    max-width: 250px;
+    float: left;
+  }
+
+  #grafiek3{
+    max-width: 600px;
+  }
+
+  #grafiek4{
+    max-width: 300px;
+    float: right;
+    margin-right: 50px;
+  }
+
+  #myChart4 {
+    margin-top: 100px;
+  }
+}
+
+/* klein desktop */
+@media screen and (min-width: 1024px) {
+  body{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1px;
+  grid-template-areas: 
+        "title title"
+        "ad2  main"
+        "ad2  ad1"; 
+  }
+
+  h1{
+    font-size: 1.8em;
+  }
+
+  h2{ 
+    font-size: 1.2em;
+  }
+
+  .main{
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  .ad1 {
+   margin-top: 10px;
+   margin-right: 10px;
+  }
+
+  .ad2 {
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  img {
+    width: 180px;
+  }
+
+  #grafiek1 {
+  max-width: 500px;
+  }
+
+  #grafiek2 {
+    max-width: 320px;
+    margin-bottom: 25px;
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #grafiek3{
+    max-width: 500px;
+  }
+
+  #grafiek4{
+    max-width: 350px;
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #myChart4 {
+    margin-top: 0px;
+  }
+}
+
+/* desktop groot */
+@media screen and (min-width: 1440px) {
+  body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1px;
+    grid-template-areas: 
+       "title title"
+        "ad2  main"
+        "ad2  ad1"; 
+  }
+
+  h1{
+    font-size: 2.0em;
+  }
+
+  h2{
+    font-size: 1.4em;
+  }
+  
+  img {
+    width: 225px;
+  }
+    #grafiek1 {
+  max-width: 450px;
+  }
+
+  #grafiek2 {
+    max-width: 325px;
+  }
+
+  #grafiek3{
+    max-width: 450px;
+  }
+
+  #grafiek4{
+    max-width: 325px;
+  }
+
+}
